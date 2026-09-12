@@ -1,4 +1,4 @@
-const BASE_URL = "[https://saloonbookwise-system.vercel.app/api]";
+const BASE_URL = "https://saloonbookwise-system.vercel.app/api"
 function getToken(): string | null { return localStorage.getItem("bookwise_token"); }
 
 export async function apiRequest<T>(path: string, options: { method?: string; body?: unknown } = {}): Promise<T> {
