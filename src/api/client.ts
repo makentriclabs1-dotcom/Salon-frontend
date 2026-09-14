@@ -1,5 +1,6 @@
 const BASE_URL =
-  "https://salon-backend-4vpmnj8lu-makentriclabs1-5493.vercel.app/api";
+   import.meta.env.VITE_API_URL ||
+  "https://salon-backend-4vpmnj1-5493.vercel.app/api";
 
 function getToken(): string | null {
   return localStorage.getItem("bookwise_token");
